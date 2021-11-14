@@ -17,7 +17,7 @@ $ docker/run.sh --volume /<project file>:/<project file>
 
 Running the program:
 
-$ cd <file path>
+$ cd (file path)
 
 $ python3 screensave.py --model=resnet18.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 /dev/video0
 
@@ -32,9 +32,9 @@ $ camera-capture /dev/video0
 2: Using the provided labels.txt file, collect “absent” and “present” data sets. The absent data set should contain at least 100 pictures of the background area located behind where you usually work without you in the pictures. The present data set should contain at least 100 pictures of yourself seated in front of your screen with your head at various positions and angles.
 
 3: Train the model according to the instructions in the link above.
-$ python3 train.py --model-dir=models/<YOUR-MODEL> data/<YOUR-DATASET>
+$ python3 train.py --model-dir=models/(YOUR-MODEL) data/(YOUR-DATASET)
 
 4: Export model
-$ python3 onnx_export.py --model-dir=models/<YOUR-MODEL>
+$ python3 onnx_export.py --model-dir=models/(YOUR-MODEL)
 
 5: Copy the exported model to the directory where the screensave script is and replace the resnet18.onnx file with it.
