@@ -1,7 +1,7 @@
 # Jetson_AI_Project
 My screen saver project for the Jetson AI course
 
-This program uses a Resnet18 image classification model to determine whether or not I am sitting in front of the computer and turn off and on the monitor display accordingly. If it detects that I am absent for more than 5 seconds, the display will be turned off. If the display is off and it detects that I am present in front of the monitor, it will turn the display back on. This is a more efficient most screensavers, which simply turn off the display after a period of time without user input. This program would save more power and could extend the battery life of devices like laptops and phones.
+This program uses a Resnet18 image classification model to determine whether or not I am sitting in front of the computer and turn off and on the monitor display accordingly. If it detects that I am absent for more than 5 seconds, the display will be turned off. If the display is off and it detects that I am present in front of the monitor, it will turn the display back on. This is more efficient than most screensavers, which simply turn off the display after a period of time without user input. This program would save more power and could extend the battery life of devices like laptops and phones.
 
 
 Set up instructions:
@@ -12,7 +12,7 @@ Set up instructions:
 
 3: Start the docker container
 $ cd jetson-inference
-$ docker/run.sh --volume /<project file>:/<project file>
+$ docker/run.sh --volume /(project file):/(project file)
 
 
 Running the program:
