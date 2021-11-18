@@ -16,6 +16,10 @@ Set up instructions:
 $ cd jetson-inference
 $ docker/run.sh --volume /(project file):/(project file)
 
+4: Install X utilities on the docker contianer
+$ apt-get update
+$ apt-get install --no-install-recommends -y x11-xserver-utils
+
 
 Running the program:
 
