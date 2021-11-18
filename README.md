@@ -3,6 +3,8 @@ My screen saver project for the Jetson AI course
 
 This program uses a Resnet18 image classification model to determine whether or not I am sitting in front of the computer and turn off and on the monitor display accordingly. If it detects that I am absent for more than 5 seconds, the display will be turned off. If the display is off and it detects that I am present in front of the monitor, it will turn the display back on. This is more efficient than most screensavers, which simply turn off the display after a period of time without user input. This program would save more power and could extend the battery life of devices like laptops and phones.
 
+Demonstration video: https://photos.app.goo.gl/qPj81kUnZfukpX2Z6
+
 
 Set up instructions:
 
@@ -17,7 +19,7 @@ $ docker/run.sh --volume /(project file):/(project file)
 
 Running the program:
 
-$ cd (file path)
+$ cd (ssav file path)
 
 $ python3 screensave.py --model=resnet18.onnx --labels=labels.txt --input_blob=input_0 --output_blob=output_0 /dev/video0
 
